@@ -143,3 +143,47 @@ public class practiseCode
     }
 }
 
+/****************************************************************************************************************************************************************************/
+import java.util.Scanner;
+public class practiseCode
+{
+    public static void main(String[] args)
+    {  
+        /**
+        Write a program to find the remainder when an integer A is divided by an integer B.
+
+        Input
+        The first line contains an integer T, the total number of test cases. Then T lines follow, each line contains two Integers A and B.
+         
+        Output
+        For each test case, find the remainder when A is divided by B, and display it in a new line.
+        
+        Constraints  
+        **/
+
+        System.out.println("Enter the test cases :");
+        Scanner sc = new Scanner(System.in);
+
+        remainder user = new remainder();
+
+        user.input(3,54,65);
+        
+    }
+
+    
+}
+
+class remainder
+    {
+        
+        void input(int times , int a, int b)
+        {   
+            for(int i = 0 ; i < times ; i++)
+            {
+                System.out.println("Enter the Integers :");
+                System.out.println("Remainder = " + a%b);
+            }
+        } 
+    }
+
+

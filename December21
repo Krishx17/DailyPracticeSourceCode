@@ -248,3 +248,24 @@ public class practiseCode
         }
         System.out.println("Number of times 4 occured : "+count);
  
+/***************************************************************************************************************************************************************************/
+//Question code : FLOW007
+//Date of modification = 14/12/21
+import java.util.Scanner;
+public class practiseCode
+{
+    
+     public static void main(String[] args)
+    {   
+        //  Question 4 - Given an integer N , WAP to reverse it .
+        int num = 453;
+        while(num > 0)
+        {
+            int temp = num % 10;
+            System.out.println("Number Reversed : " + temp);
+            num /= 10;
+        }
+    }
+}
+
+/************************************************************************************************************************************************************************/

@@ -186,4 +186,44 @@ class remainder
         } 
     }
 
+/***************************************************************************************************************************************************************************
+                                                                 Date of Modification : 13/12/2021
+****************************************************************************************************************************************************************************/
+import java.util.Scanner;
+public class practiseCode
+{
+    public static void main(String[] args)
+    {
+        /**
+        Question : If Give an integer N . Write a program to obtain the sum of the first and last digits of this number.
 
+        Input
+        The first line contains an integer T, the total number of test cases. Then follow T lines, each line contains an integer N.
+
+        Output
+        For each test case, display the sum of first and last digits of N in a new line.
+
+        Constraints
+        1 ≤ T ≤ 1000
+        1 ≤ N ≤ 1000000
+        **/
+
+        int num = 2346;
+        int count = 1;
+        int sum = 0;
+        int temp;
+        while(num>0)
+        {
+            
+            temp = num % 10;
+            if (count == 1 || num<10)
+            {
+                sum += temp;
+            }
+            num = num/10;
+            count++;
+        }
+        System.out.println("the sum of the first and the last digits of the integer :"+sum);
+    }
+}
+ 

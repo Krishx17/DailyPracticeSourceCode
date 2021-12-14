@@ -226,4 +226,25 @@ public class practiseCode
         System.out.println("the sum of the first and the last digits of the integer :"+sum);
     }
 }
+
+/***************************************************************************************************************************************************************************/
+
+        int num = 4444444;
+        String temp = Integer.toString(num);
+        int[] arr = new int[temp.length()];
+        for(int i = 0 ; i<temp.length() ; i++)
+        {
+            arr[i] = temp.charAt(i) - '0';
+        }
+        int count = 0;
+        for(int i = 0 ; i < temp.length(); i++)
+        { 
+            if(arr[i] == 4)
+            {   
+                count += 1;
+            }
+            System.out.println("Elements of Array : " + arr[i]);
+
+        }
+        System.out.println("Number of times 4 occured : "+count);
  

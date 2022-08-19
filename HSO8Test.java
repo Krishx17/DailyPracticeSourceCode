@@ -10,7 +10,7 @@ Platform : CodeChef
 
 import java.util.Scanner;
 
-public class practiseCode
+public class HSO8Test
 {
     public static void main(String[] args)
     {   
